@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "numpymaxx"
-version = "0.1.0"
+version = "0.1.1"
 description = "Single-shot LLM vectorizer for slow Pandas / NumPy code"
 readme = "README.md"
 license = { text = "MIT" }
