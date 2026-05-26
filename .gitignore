@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment / secrets
+.env
+*.env
+
+# Throttle file
+.or_last_call
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Test artifacts
+.pytest_cache/
+*.log
+corpus_report.md
+corpus_results.json
