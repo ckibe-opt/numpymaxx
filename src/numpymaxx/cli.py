@@ -191,7 +191,7 @@ def _synthesize_inputs(func_source: str, n: int):
                 "message": np.where(rng.random(n) > 0.5, "error log", "info log"),
                 "group":   np.where(rng.random(n) > 0.5, "A", "B"),
             }))
-        elif any(k in pl for k in ("matrix", "mat", "a", "b")):
+        elif pl in ("a", "b") or any(k in pl for k in ("matrix", "mat")):
             m = max(int(n ** 0.5), 10)
             args.append(rng.standard_normal((m, m)))
         elif any(k in pl for k in ("arr", "array", "values", "vec")):
